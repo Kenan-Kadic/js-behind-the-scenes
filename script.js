@@ -127,3 +127,19 @@ const jonas = {
 jonas.calcAge();
 
 
+
+const matilda = {
+    year: 2017,
+}
+
+// METHOD BORROWING
+
+matilda.calcAge = jonas.calcAge;
+
+//now matila has calcAge
+
+//this keyword now points to matilda because matilda is calling the calcAge() method that has this in it
+//matilda owns the calcAge method
+matilda.calcAge();
+
+// THIS KEYWORD always points to the object that is calling the method.
